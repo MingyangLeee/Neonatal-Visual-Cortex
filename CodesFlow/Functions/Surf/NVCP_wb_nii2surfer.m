@@ -1,9 +1,0 @@
-function NVCP_wb_nii2surfer(volfile,outfilename)
-% command_l = ['wb_command -volume-to-surface-mapping ',volfile,' L:\dHCP\Masks\Bozek2018\dHCP.week36.L.midthickness.surf.gii ',...
-%     outfilename,'_L.shape.gii -trilinear'];
-command_l = ['wb_command -volume-to-surface-mapping ',volfile,' L:\dHCP\DATA\dhcp-rel-1\derivatives\sub-CC00069XX12\ses-26300\anat\Native\sub-CC00069XX12_ses-26300_left_inflated.surf.gii ',...
-    outfilename,'_L.shape.gii -trilinear'];
-command_r = ['wb_command -volume-to-surface-mapping ',volfile,' L:\dHCP\Masks\Bozek2018\dHCP.week36.R.midthickness.surf.gii ',...
-    outfilename,'_R.shape.gii -trilinear'];
-system(command_l);
-system(command_r);
