@@ -18,7 +18,7 @@ copyfile(FunFiles{1},FunTemt);
 command = ['gzip -d ',[FunTemt,filesep,FunNames{1}]]; % no java support
 system(command);
 %% crop data with lowest head motion 
-[Data,VoxSize,FileList,Header] = y_ReadAll(FunTemt);
+[Data,VoxSize,FileList,Header] = y_ReadAll(FunTemt); % I modified this function to make the reading without rotation in affine matrix !!!
 load_tempt = load('/home/limingyang/WorkSpace/NVCP/documents/rfMRI_crop.mat');
 crop_range = load_tempt.range{subi};
 Data = Data(:,:,:,crop_range);
