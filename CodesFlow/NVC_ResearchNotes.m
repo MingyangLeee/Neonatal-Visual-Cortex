@@ -4,6 +4,8 @@
 % doi: https://doi.org/10.1101/2022.03.16.484671 (bioRxiv)
 % In fact, this work didn't  generate new algorithm and most codes here
 % were the use of other tools such as:
+% FSL (https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/)
+% SPM (https://www.fil.ion.ucl.ac.uk/spm/software/spm12/)
 % connectome workbench (https//www.humanconnectome.org/software/connectome-workbench)
 % dpabi (http://rfmri.org/dpabi)
 % BCT toolbox (https://www.nitrc.org/projects/bct/)
