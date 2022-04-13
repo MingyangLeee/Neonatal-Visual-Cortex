@@ -23,7 +23,7 @@ if shadow == 1
     set(y1_fill,'LineStyle','none','facealpha',0.5);
     hold on
 end
-[rt,pt] = corr(x1,y1,'type','Spearman');
+[rt,pt] = corr(x1,y1,'type','Pearson'); % change the method when needed
 r = rt(1);p = pt(1);
 % line 2
 if nargin > 2 
@@ -67,7 +67,7 @@ if shadow == 1
     set(y3_fill,'LineStyle','none','facealpha',0.3);
     hold on   
 end
-[rt,pt] = corr(x3,y3,'type','Spearman');
+[rt,pt] = corr(x3,y3,'type','Pearson');
 r(3) = rt(1);p(3) = pt(1);
 end
 
