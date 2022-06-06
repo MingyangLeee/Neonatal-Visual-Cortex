@@ -66,8 +66,8 @@ system(command);
 FunFiles = [FunVolume,'/T2w_reslice.nii'];
 tissuefile = my_ls([FunTemt,'/*drawem9_dseg.nii']);
 maskfile = my_ls([FunTemt,'/*brain_mask.nii']);
-y_Reslice(tissuefile{1},[FunVolume,'/tissue_labels.nii'],VoxSize,1,FunFiles);
-y_Reslice(maskfile{1},[FunVolume,'/brainmask.nii'],VoxSize,1,[FunVolume,'/tissue_labels.nii']);
+y_Reslice(tissuefile{1},[FunVolume,'/tissue_labels.nii'],VoxSize,0,FunFiles);
+y_Reslice(maskfile{1},[FunVolume,'/brainmask.nii'],VoxSize,0,[FunVolume,'/tissue_labels.nii']);
 %% nuisance signal
 Mask_all = y_Read([FunVolume,'/tissue_labels.nii']);
 ROIDef = [];
